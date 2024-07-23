@@ -1,0 +1,103 @@
+/* Base styles */
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pokemon-card {
+  width: 30%; /* Adjust width as needed */
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.pokemon-card h3 {
+  margin-top: 10px;
+}
+
+.pokemon-card p {
+  margin: 8px 0;
+}
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .pokemon-card {
+    width: 100%; /* Full width for small screens */
+    margin: 10px 0; /* Less margin for small screens */
+    padding: 15px; /* Less padding for small screens */
+  }
+
+  .pokemon-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+/* Medium devices (tablets, 600px to 768px) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .pokemon-card {
+    width: 45%; /* Adjust width for medium screens */
+    margin: 15px; /* Adjust margin for medium screens */
+    padding: 18px; /* Adjust padding for medium screens */
+  }
+}
+
+/* Large devices (desktops, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .pokemon-card {
+    width: 30%; /* Original width for large screens */
+    margin: 20px; /* Original margin for large screens */
+    padding: 20px; /* Original padding for large screens */
+  }
+}
+
+.header {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Add margin-bottom for spacing */
+}
+.header h3{
+ margin-right: 900px;
+ margin-top: 10px;
+ font-size: 20px;
+}
+
+.logout-button {
+  background-color: #d9534f;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+.poki{
+  padding-top:3px
+}
